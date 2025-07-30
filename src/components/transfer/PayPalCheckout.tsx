@@ -151,60 +151,16 @@ const PayPalCheckout: React.FC<PayPalCheckoutProps> = ({
     onError={onError}
     style={{
         input: {
-            // Base styling to match email input
-            "border": "1px solid #e5e7eb", // border-gray-300
-            "border-radius": "16px", // rounded-lg
-            "padding": "14px 16px", // py-3 pl-10 pr-12 equivalent
             "font-size": "16px",
             "font-family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
-            "font-weight": "400",
-            "color": "#111827", // text-gray-700
-            "background": "#ffffff", // bg-transparent
-            "height": "52px", // py-3 equivalent
-            "line-height": "1.5",
-            "width": "100%",
-            // Smooth transitions matching the email input
-            "transition": "all 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
-            // Remove default browser styling
-            "appearance": "none",
-            "-webkit-appearance": "none",
-            "-moz-appearance": "none",
-            "outline": "none",
-            "box-shadow": "none"
+            "color": "#111827",
+            "padding": "14px 16px"
         },
-        // Focus state - matching focus:ring-2 focus:ring-red-500 focus:border-red-500
-        ":focus": {
-            "border": "1px solid #3b82f6", // focus:border-red-500
-            "box-shadow": "none", // focus:ring-2 focus:ring-red-500
-            "outline": "none",
-            "transform": "translateY(-1px)"
-        },
-        // Invalid state - red styling
         ".invalid": {
-            "border": "1px solid #ef4444",
-            "box-shadow": "none",
-            "color": "#111827" // Keep text color normal, just border changes
+            "color": "#ef4444"
         },
-        // Valid state - subtle green indication
         ".valid": {
-            "border": "1px solid #10b981",
-            "box-shadow": "none"
-        },
-        // Disabled state - matching disabled:opacity-50
-        ":disabled": {
-            "opacity": "0.5",
-            "cursor": "not-allowed",
-            "background": "#ffffff"
-        },
-        // Placeholder styling
-        "::placeholder": {
-            "color": "#9ca3af", // placeholder-gray-400
-            "opacity": "1"
-        },
-        // Hover state
-        ":hover:not(:focus)": {
-            "border-color": "#d1d5db",
-            "box-shadow": "none"
+            "color": "#10b981"
         }
     }}
 >
