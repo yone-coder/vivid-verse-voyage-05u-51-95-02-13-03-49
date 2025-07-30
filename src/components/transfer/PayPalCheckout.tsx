@@ -27,7 +27,7 @@ const PayPalCheckout: React.FC<PayPalCheckoutProps> = ({
 }) => {
     const [isPaying, setIsPaying] = useState(false);
     const initialOptions = {
-        clientId: "AeF2jNAZb2M2UNLRlrpoVWGk9Ja5WfFdc0xZfElMuN5dLt5_FYL-VR1CYepP3sw57haixkKAbZ-wV2_5",
+        clientId: "AU23YbLMTqxG3iSvnhcWtix6rGN14uw3axYJgrDe8VqUVng8XiQmmeiaxJWbnpbZP_f4--RTg146F1Mj",
         "enable-funding": "venmo",
         "disable-funding": "",
         "buyer-country": "US",
